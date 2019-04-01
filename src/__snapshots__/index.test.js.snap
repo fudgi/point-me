@@ -32,6 +32,7 @@ exports[`Render Test App render check 1`] = `
     <main>
       <Sidebar
         addNewPoint={[Function]}
+        backgroundClick={[Function]}
         deletePoint={[Function]}
         onDragEnd={[Function]}
         onDragLeave={[Function]}
@@ -69,6 +70,7 @@ exports[`Render Test Sidebar render check 1`] = `
 <Fragment>
   <div
     className="background-container"
+    onClick={[Function]}
   />
   <aside
     className="sidebar sidebar_hidden"
