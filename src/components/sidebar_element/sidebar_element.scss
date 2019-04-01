@@ -1,0 +1,70 @@
+.sidebar_element{
+    font-size: 0.9em;
+    padding: 0 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    cursor: grab;
+    transition: all 0.3s;
+    &:hover{
+        background-color: rgba(173, 216, 230, 0.582);
+        transform: scale(1.05);
+    }
+    &:last-child{
+        .sidebar_element_right{
+            border-bottom: 0;
+        }
+    }
+}
+
+.sidebar_element_dragover{
+    box-shadow: 0 0 3px rgb(133, 133, 133); 
+    background-color: rgba(92, 92, 92, 0.178);
+    .sidebar_element_right{
+        border-color: transparent;
+    }
+}
+
+.sidebar_element_grabbed{
+    cursor: grabbing;
+}
+
+.sidebar_element_left{
+    margin: auto 0;
+    position: relative;
+}
+
+.sidebar_element_circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid rgb(241, 241, 241);
+}
+
+
+.sidebar_element_right{
+    min-width: 70%;
+    padding: 10px;
+    padding-right: 0;
+    border-bottom: 1px solid gainsboro;
+}
+.sidebar_element_button{
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    &:hover{
+        transform: scale(1.1)
+    }
+    &:focus{
+        outline: 0;
+    }
+}
+
+.sidebar_element_row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar_element_img{
+    width: 1.3em;
+}

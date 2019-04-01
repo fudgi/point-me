@@ -1,0 +1,80 @@
+@font-face {
+    font-family:"Exo 2 Thin";
+    src: url(./fonts/Exo2.0-Thin.otf) format("opentype");
+    font-weight:normal;
+    font-style:normal;
+}
+$border-style: 1px solid gainsboro;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body, #root{
+    height: 100%;
+    font-family: "Exo 2 Thin";
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.app-header{
+    display: flex;
+    z-index: 3;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    padding: 10px 30px;
+    border-bottom: $border-style;
+    .brand{
+        display: flex;
+        align-items: center;
+        &-logo {
+            height: 2rem;
+            width: 2rem;
+        }
+        &-text{
+            margin-left: 10px;
+            font-size: 1.3rem;
+        }
+    }
+}
+
+main{
+    height: calc(100% - 50px);
+    display: flex;
+    .map{
+        width: 100%;
+        position: relative;
+        &-loading{
+            position: absolute;
+            text-align: center;
+            line-height: 1.3rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        img{
+            width: 30px;
+        }
+    }
+}
+
+.sidebar-opener{
+    transition: all 1s;
+}
+.sidebar-opener.active{
+    transform: rotate(360deg);
+}
+
+@media (min-width: 700px){
+    .sidebar-opener{
+        display: none;
+    }
+}

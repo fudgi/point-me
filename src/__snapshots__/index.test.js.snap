@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Test App render check 1`] = `
+<Fragment>
+  <div
+    className="container"
+  >
+    <header
+      className="app-header"
+    >
+      <div
+        className="brand"
+      >
+        <img
+          alt="brand logo"
+          className="brand-logo"
+          src="direction.svg"
+        />
+        <p
+          className="brand-text"
+        >
+          Point-Me
+        </p>
+      </div>
+      <img
+        alt="sidebar.svg"
+        className="sidebar-opener"
+        onClick={[Function]}
+        src="sidebar.svg"
+      />
+    </header>
+    <main>
+      <Sidebar
+        addNewPoint={[Function]}
+        deletePoint={[Function]}
+        onDragEnd={[Function]}
+        onDragLeave={[Function]}
+        onDragOver={[Function]}
+        onDragStart={[Function]}
+        points={Array []}
+        resetAllPoints={[Function]}
+        sidebarOpened={false}
+      />
+      <section
+        className="map"
+      >
+        <div
+          className="map-loading"
+        >
+          <img
+            alt="loading.gif"
+            src="loading.gif"
+          />
+          <p>
+            Пожалуйста, подожите. Карта скоро появится
+          </p>
+        </div>
+        <YandexMap
+          points={Array []}
+          updatePointCoords={[Function]}
+        />
+      </section>
+    </main>
+  </div>
+</Fragment>
+`;
+
+exports[`Render Test Sidebar render check 1`] = `
+<Fragment>
+  <div
+    className="background-container"
+  />
+  <aside
+    className="sidebar sidebar_hidden"
+  >
+    <div
+      className="sidebar_container"
+    >
+      <div
+        className="sidebar-controls"
+      >
+        <form>
+          <label
+            htmlFor="point-name"
+          >
+            Введите имя точки: 
+          </label>
+          <input
+            className="input sidebar_namefield"
+            id="point-name"
+            placeholder="Название точки"
+            type="text"
+          />
+          <button
+            className="button sidebar-add"
+            onClick={[Function]}
+          >
+            Добавить новую точку в центр карты
+          </button>
+        </form>
+      </div>
+      <section
+        className="sidebar_element_container"
+      />
+      <button
+        className="button sidebar_reset"
+        onClick={[Function]}
+      >
+        Сбросить все точки
+      </button>
+    </div>
+  </aside>
+</Fragment>
+`;
+
+exports[`Render Test SidebarElement render check 1`] = `
+<div
+  className="sidebar_element"
+  draggable={true}
+  onDragEnd={[Function]}
+  onDragLeave={[Function]}
+  onDragOver={[Function]}
+  onDragStart={[Function]}
+>
+  <div
+    className="sidebar_element_left"
+  >
+    <div
+      className="sidebar_element_circle"
+      style={
+        Object {
+          "backgroundColor": "",
+        }
+      }
+    >
+       
+    </div>
+  </div>
+  <div
+    className="sidebar_element_right"
+  >
+    <div
+      className="sidebar_element_row"
+    >
+      <p>
+         
+        NaN
+        . 
+        Точка
+         
+      </p>
+      <button
+        className="sidebar_element_button"
+        onClick={[Function]}
+      >
+        <img
+          alt="delete element"
+          className="sidebar_element_img"
+          src="trash.svg"
+        />
+      </button>
+    </div>
+    <p
+      className="sidebar_element_coord"
+    >
+       
+      10.000 : 30.000
+       
+    </p>
+  </div>
+</div>
+`;
